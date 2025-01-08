@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+
+
+}
+
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+#add-discount-form {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+input[type="text"], input[type="number"], input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.action-button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: #218838;
+}
+
+.edit_discount{
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 5px; /* Điều chỉnh khoảng cách bên phải */
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background: #f8f9fa;
+    text-align: center;
+}
+.message {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+/* CSS cho modal */
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed; /* Đặt modal ở vị trí cố định */
+    z-index: 1000; /* Đảm bảo modal nằm trên tất cả các phần tử khác */
+    left: 0;
+    top: 0;
+    width: 100%; /* Toàn bộ chiều rộng */
+    height: 100%; /* Toàn bộ chiều cao */
+    overflow: auto; /* Bật cuộn nếu cần */
+    background-color: rgba(0,0,0,0.4); /* Màu nền nửa trong suốt */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% từ trên và giữa theo chiều ngang */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Chiều rộng của modal */
+    max-width: 600px; /* Chiều rộng tối đa */
+    border-radius: 5px; /* Bo góc */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Điều chỉnh responsive */
+@media (max-width: 768px) {
+    .action-button {
+        margin: 5px
+    }
+    .message {
+        display: none; /* Ẩn mặc định */
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    }
+/* Thiết lập chung cho bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+
+th {
+    background: #f8f9fa;
+    text-align: center;
+}
+
+
+/* Responsive cho bảng dạng cột */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Hiển thị từng ô bảng dưới dạng khối */
+    }
+
+
+    /* Ẩn tiêu đề của bảng */
+    thead tr {
+        display: none;
+    }
+
+
+    /* Thiết lập từng dòng dữ liệu thành một khối */
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    /* Hiển thị tiêu đề cột bên trong ô dữ liệu */
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+
+    /* Gán tên tiêu đề cho mỗi ô dữ liệu bằng data-label */
+    td::before {
+        content: attr(data-label); /* Lấy giá trị từ data-label để làm tiêu đề */
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+
+}

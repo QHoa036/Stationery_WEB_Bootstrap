@@ -1,0 +1,175 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* Phần thông tin người dùng */
+.profile-section,
+.cart-section {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+/* Tiêu đề phần thông tin */
+.profile-section h2 {
+    font-family: "Anton SC", sans-serif;
+    padding: 20px;
+    background-color: #f26f33;
+    color: white;
+    padding: 30px;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    text-shadow: -1px -1px 0 #005f69, 1px -1px 0 #005f69, -2px 2px 0 #005f69, 2px 2px 0 #005f69;
+}
+
+
+/* Ảnh đại diện */
+.profile-section img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border: 2px solid #005F69;
+    margin-bottom: 10px;
+}
+
+
+/* Thông tin người dùng */
+.profile-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.profile-info div {
+    margin-left: 0;
+    margin: 20px;
+}
+
+
+/* Thông tin chi tiết họ tên, email... */
+.profile-info p {
+    margin: 5px 0;
+}
+
+
+/* Đường kẻ ngang */
+hr {
+    color: #F26F33;
+    border: 5px solid #F26F33;
+}
+
+
+/* Phần yêu thích*/
+.d-flex {
+    background-color: #f26f33;
+    width: max-content;
+}
+
+
+/* Tiêu đề phần yêu thích */
+.cart-section h2 {
+    font-family: "Anton SC", sans-serif;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    text-shadow: -1px -1px 0 #005f69, 1px -1px 0 #005f69, -2px 2px 0 #005f69, 2px 2px 0 #005f69;
+}
+
+
+/* Icon trong phần yêu thích */
+.cart-section i {
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+
+/* Mục sản phẩm yêu thích */
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background-color: #005F697D;
+    margin-bottom: 10px;
+}
+
+
+/* Ảnh sản phẩm */
+.cart-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+
+/* Chi tiết sản phẩm */
+.cart-item-details {
+    flex: 1;
+}
+
+
+/* thông tin chi tiết sản phẩm */
+.cart-item-details p {
+    margin: 5px 0;
+    margin-left: 10px;
+}
+
+
+/* Giá sản phẩm, số lượng, và nút xóa */
+.cart-item-price,
+.cart-item-quantity,
+.cart-item-remove {
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+/* Giá sản phẩm*/
+.cart-item-price {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Nút xóa sản phẩm */
+.cart-item-remove {
+    color: #ff4b4b;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Đáp ứng màn hình nhỏ */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .cart-item img {
+        margin-bottom: 10px;
+    }
+}
